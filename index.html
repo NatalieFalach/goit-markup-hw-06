@@ -18,26 +18,26 @@
 </head>
 
 <body>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form action="" class="madal-form">
                 <label class="label" for="name">Имя
-                    <input class="input" type="text" name="name">
+                    <input class="input" type="text" name="name" autocomplete="off" required>
                     <svg class="modal-form-icon">
                         <use href="./img/icons.svg#person"></use>
                     </svg>
                 </label>
 
                 <label class="label" for="tel">Телефон
-                    <input class="input" type="tel" name="tel">
+                    <input class="input" type="tel" name="tel" autocomplete="off" required>
                     <svg class="modal-form-icon ">
                         <use href="./img/icons.svg#phone-black"></use>
                     </svg>
                 </label>
 
                 <label class="label" for="mail">Почта
-                    <input class="input" type="email" name="mail" autocomplete="on">
+                    <input class="input" type="email" name="mail" autocomplete="on" required>
                     <svg class="modal-form-icon">
                         <use href="./img/icons.svg#email"></use>
                     </svg>
