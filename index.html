@@ -18,8 +18,52 @@
 </head>
 
 <body>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop " data-modal>
         <div class="modal">
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <form action="" class="madal-form">
+                <label class="label" for="name">Имя
+                    <input class="input" type="text" name="name">
+                    <svg class="modal-form-icon">
+                        <use href="./img/icons.svg#person"></use>
+                    </svg>
+                </label>
+
+                <label class="label" for="tel">Телефон
+                    <input class="input" type="tel" name="tel">
+                    <svg class="modal-form-icon ">
+                        <use href="./img/icons.svg#phone-black"></use>
+                    </svg>
+                </label>
+
+                <label class="label" for="mail">Почта
+                    <input class="input" type="email" name="mail" autocomplete="on">
+                    <svg class="modal-form-icon">
+                        <use href="./img/icons.svg#email"></use>
+                    </svg>
+                </label>
+
+                <label class="label" for="comment">Комментарий
+                    <textarea class="comment" name="comment" placeholder="Введите текст">
+                </textarea>
+                </label>
+
+
+                <label class="label-checkbox" for="is-agree">
+                    <input class="checkbox" type="checkbox" name="is-agree" value="is-agree" id="is-agree">
+                    <div class="checkbox-box">
+                        <svg class="checkbox-icon">
+                            <use href="./img/icons.svg#check"></use>
+                        </svg>
+                    </div>
+
+                    <p>Соглашаюсь с рассылкой и принимаю
+                        <a class="checkbox-label-text" href="/">Условия договора</a>
+                    </p>
+                </label>
+                <button class="modal-submit" type="submit">Отправить</button>
+            </form>
+
             <button class="modal-button" data-modal-close>
                 <svg class="modal-icon">
                     <use href="./img/icons.svg#close-black"></use>
@@ -420,6 +464,19 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="subscribe">
+                <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
+                <form class="subscribe-form" action="">
+                    <input class="subscribe-input" type="email" name="mail" placeholder="E-mail" required>
+                    <button class="subscribe-btn" type="submit">
+                        <span>Подписаться</span>
+                        <svg class="subscribe-svg">
+                            <use href="./img/icons.svg#icon-send"></use>
+                        </svg>
+                    </button>
+
+                </form>
             </div>
         </div>
     </footer>
