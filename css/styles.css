@@ -211,6 +211,7 @@ textarea {
   border-radius: 2px;
   border: 2px solid rgba(33, 33, 33, 1);
   fill: var(--color-white);
+  transition: border var(--cubik);
 }
 
 input.checkbox:checked + .checkbox-box {
@@ -218,6 +219,9 @@ input.checkbox:checked + .checkbox-box {
   border: none;
   border-radius: 2px;
   fill: var(--color-white);
+}
+input.checkbox:focus + .checkbox-box {
+  border: 1px solid var(--accent-color);
 }
 
 .checkbox-icon {
