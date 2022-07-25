@@ -155,7 +155,8 @@ textarea {
   cursor: pointer;
   transition: fill var(--cubik), border var(--cubik);
 }
-.input:focus {
+.input:focus,
+.comment:focus {
   border: 1px solid var(--accent-color);
   outline: none;
 }
@@ -171,6 +172,8 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
+  resize: none;
+  transition: border var(--cubik);
 }
 .comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
